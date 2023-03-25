@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Application</title>
+</head>
+
+<body>
+    <span>Question 1.</span> <br>
+    How many days are there in a week?<br>
+    <input type="radio" name="question1" onclick="correct()">7 <br>
+    <input type="radio" name="question1">5 <br>
+    <input type="radio" name="question1">9 <br>
+    <input type="radio" name="question1">10 <br><br>
+
+    <span>Question 2.</span> <br>
+    How many letters are there in the English alphabet?<br>
+    <input type="radio" name="question2">40 <br>
+    <input type="radio" name="question2">35 <br>
+    <input type="radio" name="question2" onclick="correct()">26<br>
+    <input type="radio" name="question2">19<br><br>
+
+    <span>Question 3.</span> <br>
+    How many minutes are there in an hour?<br>
+    <input type="radio" name="question3">25 <br>
+    <input type="radio" name="question3" onclick="correct()">60 <br>
+    <input type="radio" name="question3">30 <br>
+    <input type="radio" name="question3">40 <br><br>
+
+    <span>Question 4.</span> <br>
+    How many hours are there in a day?<br>
+    <input type="radio" name="question4">48 <br>
+    <input type="radio" name="question4" onclick="correct()">24 <br>
+    <input type="radio" name="question4">30 <br>
+    <input type="radio" name="question4">15 <br><br>
+
+    <span>Question 5.</span> <br>
+    Which animal is known as the 'Ship of the Desert"?<br>
+    <input type="radio" name="question5">Horse<br>
+    <input type="radio" name="question5" onclick="correct()">camel<br>
+    <input type="radio" name="question5">Sheep<br>
+    <input type="radio" name="question5">elephant<br><br>
+
+    <input type="submit" name="submit" value="Submit All Answers" onClick="ans()">
+    <button><a href="#" style="text-decoration: none;">Reload</a></button>
+
+    <script type="text/javascript">
+        let count=0;
+        function correct(){
+            count++;
+        }
+        function ans() {   
+            alert("Your score is:" + count);
+        }
+    </script>
+
+</body>
+
+</html>
